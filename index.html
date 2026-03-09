@@ -1,13 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/300s.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>300s.no</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>300s.no</title>
+<link rel="icon" type="image/svg+xml" href="/300s.svg" />
+<style>
+  /* Basic reset */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 300px;
+  }
+
+  a button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: #e1306c;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  a button:hover {
+    background: #c1275b;
+  }
+
+  /* Optional: subtle fade-in */
+  body { opacity: 0; animation: fadeIn 0.6s forwards; }
+  @keyframes fadeIn { to { opacity: 1; } }
+</style>
+</head>
+<body>
+  <h1>300s</h1>
+  <p>I make custom clear tail lights for both uncommon & common cars.</p>
+  <p>I also do liveries & graphic designs.</p>
+  <p>But hey, if you have any questions or want a set of clears for your car, DM me on Instagram!</p>
+  <a href="https://www.instagram.com/sebastiansmash" target="_blank">
+    <button>Open Instagram</button>
+  </a>
+</body>
 </html>
