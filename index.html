@@ -53,7 +53,7 @@
       font-size: 1.2rem;
       border: none;
       border-radius: 12px;
-      background: #4786c0;
+      background: #4786c0; /* Blue button */
       color: white;
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -61,12 +61,18 @@
     }
 
     a button:hover {
-      background: #c1275b;
+      background: #3a6ca0; /* darker blue hover */
       transform: scale(1.05);
     }
 
-    /* Responsive tweaks */
+    /* Responsive tweaks for mobile */
     @media (max-width: 500px) {
+      body {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('https://i.imgur.com/DuCg0iK.png') 
+                    no-repeat center center;
+        background-size: cover;
+      }
       h1 { font-size: 2.2rem; }
       p { font-size: 1rem; max-width: 300px; }
       a button { padding: 12px 30px; font-size: 1rem; }
